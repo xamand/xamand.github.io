@@ -6,11 +6,12 @@
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
    <link rel="shortcut icon" href="assets/images/favicon.ico"/>
-   <link rel="stylesheet" href="assets/css/style.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <title>My Portfolio</title>
 </head>
-<body class="">
+<body>
+<div class="bg-page">
    <!-- Header -->
    <header class="header">
       <div class="container">
@@ -38,6 +39,7 @@
 <!-- .Intro -->
    <section class="intro">
       <div class="container">
+         <div class="background-hero"></div>
          <div class="intro__inner">
             <div class="intro__content">
                <h2 class="intro__subtitle">Hello, I'm</h2>
@@ -45,13 +47,19 @@
                <div class="intro__text">Web Developer</div>
                <div class="social">
                   <a class="social__link">
-                     <img src="assets/images/social-icon/facebook.svg" alt="">
+                     <div class="social__link-frame social__link-frame--blue">
+                        <img src="assets/images/social-icon/facebook.svg" height="23px" alt="">
+                     </div>
                   </a>
                   <a class="social__link">
-                     <img src="assets/images/social-icon/in.svg" alt="">
+                     <div class="social__link-frame social__link-frame--teal">
+                        <img src="assets/images/social-icon/linkedin.svg" width="23px" alt="">
+                     </div>
                   </a>
                   <a class="social__link" href="https://twitter.com/Bowelld" target="_blank">
-                     <img src="assets/images/social-icon/twitter.svg" alt="">
+                     <div class="social__link-frame social__link-frame--cyan">
+                        <img src="assets/images/social-icon/twitter.svg" width="23px" alt="">
+                     </div>
                   </a>
                </div>
                <a href="mailto:bgmax022@gmail.com" class="btn">
@@ -61,12 +69,18 @@
                   SEE MY RESUME
                </button>
             </div>
-            <img class="intro__photo" src="assets/images/author-avatar.svg" alt="">
+            <div class="intro__photo">
+               <div class="switcher-photo">
+                  <img class="intro__photo-avatar" src="assets/images/avatar-author.svg" alt="">
+                  <img class="intro__photo-avatar avatar-mask" src="assets/images/avatar-author.JPG" alt="">
+               </div>
+            </div>
          </div> <!-- ./intro__inner -->
       </div> <!-- ./container -->
    </section><!-- /.Intro -->
    <div class="works">
       <div class="container">
+         <!-- <h2 class="intro__subtitle" style="text-align: center;">My works:</h2> -->
          <div class="works__nav">
             <a class="works__nav-link" href="#" data-filter="all">ALl</a>
             <a class="works__nav-link" href="#" data-filter="app">App</a>
@@ -147,11 +161,12 @@
                </div>
             </div>
          </div><!-- /.portfolio -->
-        <div class="text-center">
+         <div class="text-center">
             <a class="btn btn--sm" href="#">load more work</a>
-        </div>
+         </div>
       </div> <!-- /.container -->
    </div><!-- /.works -->
+</div>
    <footer class="footer">
       <div class="container">
          <div class="footer__inner">
