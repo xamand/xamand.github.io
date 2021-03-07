@@ -113,7 +113,7 @@
                </div>
             </div>
             <div class="portfolio__col" data-cat="interaction">
-               <div class="work">
+               <div class="work" data-modal="#project_2">
                   <img class="work__image" src="https://placehold.it/370x250" alt="">
                   <div class="work__content">
                      <div class="work__cat">category: interaction</div>
@@ -198,7 +198,7 @@
    <div class="modal" id="project_1">
       <div class="modal__dialog">
          <button class="modal__close" type="button" data-close>
-            <img src="assets/images/modal-close.svg" alt="">
+            <img src="assets/images/close-button.svg" alt="">
          </button>
          <div class="modal-work">
             <div class="modal-work__preview">
@@ -244,7 +244,7 @@
    <div class="modal" id="project_2">
       <div class="modal__dialog">
          <button class="modal__close" type="button" data-close>
-            <img src="assets/images/modal-close.svg" alt="">
+            <img src="assets/images/close-button.svg" alt="">
          </button>
          <div class="modal-work">
             <div class="modal-work__preview">
@@ -290,7 +290,7 @@
    <div class="modal" id="modal-resume">
       <div class="modal__dialog">
          <button class="modal__close" type="button" data-close>
-            <img src="assets/images/modal-close.svg" alt="">
+            <img src="assets/images/close-button.svg" alt="">
          </button>
          
          <div class="modal__content">
@@ -299,83 +299,161 @@
                <div class="timeline__col timeline__col--left">
                   <h4 class="timeline__title">EXPERIENCE</h4>
                   <div class="timeline__item">
-                     <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
+                     <time class="timeline__date" datetime="27-02-2022">2020 - <b>Present</b></time>
                      <h5 class="timeline__subtitle">Freelancer</h5>
-                     <div class="timeline__position">Art Director</div>
                      <div class="timeline__text">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quo eveniet ipsum unde quas tempore totam ipsa? Quos explicabo labore nihil veritatis expedita facilis quis, in tempora velit corrupti. Beatae.</p>
                      </div>
                   </div>
                   <div class="timeline__item">
-                     <time class="timeline__date" datetime="11-21-2019">2017 - <b>Present</b></time>
-                     <h5 class="timeline__subtitle">Freelancer</h5>
-                     <div class="timeline__position">Art Director</div>
+                     <time class="timeline__date" datetime="27-02-2022">09.2017 - 2020</time>
+                     <h5 class="timeline__subtitle">Govitall</h5>
+                     <div class="timeline__position">Content-manager</div>
                      <div class="timeline__text">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quo eveniet ipsum unde quas tempore totam ipsa? Quos explicabo labore nihil veritatis expedita facilis quis, in tempora velit corrupti. Beatae.</p>
+                        <ul class="markers-left">
+                           <li>Робота с CMS WordPress</li>
+                           <li>Заливка контента</li>
+                           <li>Выгрузка URLs</li>
+                           <li>Выполнение поставленных задач в Jira</li>
+                           <li>Постановка задача в Jira</li>
+                           <li>Оптимизация image</li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="timeline__item">
+                     <time class="timeline__date" datetime="27-02-2022">05.2017 - 09.2017</time>
+                     <h5 class="timeline__subtitle">CityCom</h5>
+                     <div class="timeline__position">Link builder</div>
+                     <div class="timeline__text">
+                        <p>Поиск подходящих площадок для размещения ссылок; Анализ ссылочного профиля конкурентов.</p>
                      </div>
                   </div>
                </div>
                <div class="timeline__col timeline__col--right">
                   <h4 class="timeline__title">EDUCATION</h4>
                   <div class="timeline__item">
-                     <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
-                     <h5 class="timeline__subtitle">UI/UX Design</h5>
-                     <div class="timeline__position">LA University, USA</div>
+                     <time class="timeline__date" datetime="27-02-2021">2020</time>
+                     <h5 class="timeline__subtitle">Web Academy.</h5>
+                     <div class="timeline__position">Front-end developer.</div>
                   </div>
                   <div class="timeline__item">
-                     <time class="timeline__date" datetime="11-21-2019">2005 - 2010</time>
-                     <h5 class="timeline__subtitle">UI/UX Design</h5>
-                     <div class="timeline__position">LA University, USA</div>
+                     <time class="timeline__date" datetime="27-02-2021">2016</time>
+                     <h5 class="timeline__subtitle">Учебный центр «КОНТАНКТ» при КПИ.</h5>
+                     <div class="timeline__position">Beginer Java developer.</div>
                   </div>
-                  <h4 class="timeline__title">SKILLS</h4>
+                  <div class="timeline__item">
+                     <time class="timeline__date" datetime="27-02-2021">2011 - 2016</time>
+                     <h5 class="timeline__subtitle">АПСВТ</h5>
+                     <div class="timeline__position">Экономический, маркетинг.</div>
+                  </div>
+                  <h4 class="timeline__title ">SKILLS</h4>
                   <div class="progress-bar">
                      <div class="progress-bar__item">
                         <div class="progress-bar__left">
-                           <div class="progress-bar__title">UI/UX Design</div>
+                           <div class="progress-bar__mark">
+                              <img src="assets/images/progress-mark.svg" alt="">
+                           </div>
                         </div>
                         <div class="progress-bar__right">
-                           <div class="progress-bar__line">
-                              <div class="progress-bar__progress" style="width: 50%;"></div>
-                           </div>
+                           <div class="progress-bar__title">Опыт верстки макетов(адаптивность);</div>
                         </div>
                      </div>
                      <div class="progress-bar__item">
                         <div class="progress-bar__left">
-                           <div class="progress-bar__title">UI/UX Design</div>
+                           <div class="progress-bar__mark">
+                              <img src="assets/images/progress-mark.svg" alt="">
+                           </div>
                         </div>
                         <div class="progress-bar__right">
-                           <div class="progress-bar__line">
-                              <div class="progress-bar__progress" style="width: 90%;"></div>
-                           </div>
+                           <div class="progress-bar__title">HTML5/CSS3 Flexbox - Отличные знания;</div>
                         </div>
                      </div>
                      <div class="progress-bar__item">
                         <div class="progress-bar__left">
-                           <div class="progress-bar__title">UI/UX Design</div>
+                           <div class="progress-bar__mark">
+                              <img src="assets/images/progress-mark.svg" alt="">
+                           </div>
                         </div>
                         <div class="progress-bar__right">
-                           <div class="progress-bar__line">
-                              <div class="progress-bar__progress" style="width: 70%;"></div>
+                           <div class="progress-bar__title">Знание препроцессоров: SASS/LESS;</div>
+                        </div>
+                     </div>
+                     <div class="progress-bar__item">
+                        <div class="progress-bar__left">
+                           <div class="progress-bar__mark">
+                              <img src="assets/images/progress-mark.svg" alt="">
                            </div>
+                        </div>
+                        <div class="progress-bar__right">
+                           <div class="progress-bar__title">Знание языка JavaScript;</div>
+                        </div>
+                     </div>
+                     <div class="progress-bar__item">
+                        <div class="progress-bar__left">
+                           <div class="progress-bar__mark">
+                              <img src="assets/images/progress-mark.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="progress-bar__right">
+                           <div class="progress-bar__title">NPM;</div>
+                        </div>
+                     </div>
+                     <div class="progress-bar__item">
+                        <div class="progress-bar__left">
+                           <div class="progress-bar__mark">
+                              <img src="assets/images/progress-mark.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="progress-bar__right">
+                           <div class="progress-bar__title">Gulp - базовые знания;</div>
+                        </div>
+                     </div>
+                     <div class="progress-bar__item">
+                        <div class="progress-bar__left">
+                           <div class="progress-bar__mark">
+                              <img src="assets/images/progress-mark.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="progress-bar__right">
+                           <div class="progress-bar__title">Git - базовые знания;</div>
+                        </div>
+                     </div>
+                     <div class="progress-bar__item">
+                        <div class="progress-bar__left">
+                           <div class="progress-bar__mark">
+                              <img src="assets/images/progress-mark.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="progress-bar__right">
+                           <div class="progress-bar__title">Figma; Adobe: XD/Photoshop/Illustrator.</div>
+                        </div>
+                     </div>
+                     <div class="progress-bar__item">
+                        <div class="progress-bar__left">
+                           <div class="progress-bar__mark">
+                              <img src="assets/images/progress-mark.svg" alt="">
+                           </div>
+                        </div>
+                        <div class="progress-bar__right">
+                           <div class="progress-bar__title">Jira - постановщиком задач;</div>
                         </div>
                      </div>
                   </div><!-- /.progress-bar -->
 
-                  <h4 class="timeline__title">Awards</h4>
-
                   <div class="timeline__item">
-                     <time class="timeline__date" datetime="11-21-2019">2005</time>
-                     <h5 class="timeline__subtitle">UI/UX Design</h5>
-                     <div class="timeline__position">LA University, USA</div>
+                     <h4 class="timeline__title mb0">Personal qualities</h4>
                      <div class="timeline__text">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quo eveniet ipsum unde quas tempore totam ipsa? Quos explicabo labore nihil veritatis expedita facilis quis, in tempora velit corrupti. Beatae.</p>
+                        <ul class="timeline__pq">
+                           <li>Увлеченность;</li>
+                           <li>Надежность;</li>
+                           <li>Развитие;</li>
+                        </ul>
                      </div>
                   </div>
                </div>
             </div><!-- /.timeline -->
             <div class="text-center">
                <a href="mailto:bgmax022@gmail.com" class="btn">hire me</a>
-               <a href="#" class="btn">download pdf</a>
+               <a href="#" class="btn">download</a>
             </div>
          </div><!-- /.modal__content -->
       </div><!-- /.modal__dialog -->
