@@ -1,4 +1,17 @@
+
+
 $(function () {
+
+   const avatarMask = $('.avatar-mask');
+   const introContent = $('.intro__content')
+   introContent.on("mouseover", ()=> {
+      avatarMask.css({"opacity": "1"})
+   });
+   introContent.on("mouseout", ()=> {
+      avatarMask.css({"opacity": "0"})
+   });
+
+
 
    const worksSlider =  $('[data-slider="slick"]');
 
@@ -35,9 +48,17 @@ $(function () {
       event.preventDefault();
       let $this = $(this);
       let modalId = $this.data('modal')
-
+      
+      
+      setTimeout(function() {
+         $('body').addClass('no-scroll');
+      }, 100)
       $(modalId).addClass('show');
-      $('body').addClass('no-scroll');
+      const widthShowModal = document.querySelector(".show");
+      const lockPaddingValue = widthShowModal.clientWidth - widthShowModal.offsetWidth + "px";
+      document.body.style.paddingRight = lockPaddingValue;
+      console.log(lockPaddingValue);
+      
 
       setTimeout(function() {
          $(modalId).find('.modal__dialog').css({
@@ -61,6 +82,7 @@ $(function () {
       setTimeout(function() {
          modalParent.removeClass('show');
          $('body').removeClass('no-scroll');
+         document.body.style.paddingLeft = "0px"
       }, 200);
    });
 
@@ -122,3 +144,6 @@ $(function () {
     });
 
 });
+
+ /* Body lock  
+   ==========================================================*/
