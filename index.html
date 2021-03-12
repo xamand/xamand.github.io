@@ -26,8 +26,8 @@
                </div>
             </div>
             <nav class="nav" id="nav">
-               <a class="nav__link" href="#">about me</a>
-               <a class="nav__link" href="#">works</a>
+               <a class="nav__link" id="scrollAbout" href="#">about me</a>
+               <a class="nav__link" id="scrollWorks" href="#">works</a>
                <a class="nav__link nav__link--btn" href="mailto:bgmax022@gmail.com">hire me</a>
             </nav>
             <button class="burger" id="navToggle">
@@ -40,18 +40,18 @@
    <section class="intro">
       <div class="container">
          <div class="background-hero"></div>
-         <div class="intro__inner">
+         <div class="intro__inner" id="aboutMe">
             <div class="intro__content">
                <h2 class="intro__subtitle">Hello, I'm</h2>
                <h1 class="intro__title">Maxim Bogdanov</h1>
                <div class="intro__text">Web Developer</div>
                <div class="social">
-                  <a class="social__link">
+                  <a class="social__link" href="social-link.html">
                      <div class="social__link-frame social__link-frame--blue">
                         <img src="assets/images/social-icon/facebook.svg" height="23px" alt="">
                      </div>
                   </a>
-                  <a class="social__link">
+                  <a class="social__link" href="social-link.html">
                      <div class="social__link-frame social__link-frame--teal">
                         <img src="assets/images/social-icon/linkedin.svg" width="23px" alt="">
                      </div>
@@ -78,9 +78,9 @@
          </div> <!-- ./intro__inner -->
       </div> <!-- ./container -->
    </section><!-- /.Intro -->
-   <div class="works">
+   <div class="works" id="works">
       <div class="container">
-         <!-- <h2 class="intro__subtitle" style="text-align: center;">My works:</h2> -->
+         <h2 class="works__title">Works</h2>
          <div class="works__nav">
             <a class="works__nav-link" href="#" data-filter="all">ALl</a>
             <a class="works__nav-link" href="#" data-filter="app">App</a>
@@ -88,49 +88,61 @@
             <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
          </div>
          <div class="portfolio">
-            <div class="portfolio__col" data-cat="app">
+            <div class="portfolio__col" data-cat="website">
                <div class="work" data-modal="#project_1">
-                  <img class="work__image" src="https://placehold.it/370x250" alt="">
+                  <img class="work__image" src="assets/images/images-portfolio/active-box/preview-activebox-portfolio.png" alt="">
                   <div class="work__content">
-                     <div class="work__cat">category: app</div>
+                     <div class="work__cat">category: landing</div>
                      <div class="work__title">
-                        Project title
-                        <time class="work__data" datetime="2020-11-01 19:00">2020</time>
+                        Project: activebox
+                        <time class="work__data" datetime="2020-11-01 19:00">2021</time>
                      </div>
                   </div>
                </div>
             </div>
             <div class="portfolio__col" data-cat="website">
                <div class="work" data-modal="#project_2">
-                  <img class="work__image" src="https://placehold.it/370x250" alt="">
+                  <img class="work__image" src="assets/images/images-portfolio/mogo/preview-mogo.png" alt="">
+                  <div class="work__content">
+                     <div class="work__cat">category: landing</div>
+                     <div class="work__title">
+                        Project: mogo
+                        <time class="work__data" datetime="2020-11-01 19:00">2020</time>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="portfolio__col" data-cat="website">
+               <div class="work" data-modal="#project_3">
+                  <img class="work__image" src="assets/images/images-portfolio/personal-blog/preview-personal-blog.png" alt="">
                   <div class="work__content">
                      <div class="work__cat">category: website</div>
                      <div class="work__title">
-                        Project title
+                        Project: blog
                         <time class="work__data" datetime="2020-11-01 19:00">2020</time>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="portfolio__col" data-cat="interaction">
-               <div class="work" data-modal="#project_2">
-                  <img class="work__image" src="https://placehold.it/370x250" alt="">
+            <div class="portfolio__col" data-cat="website">
+               <div class="work" data-modal="#project_4">
+                  <img class="work__image" src="assets/images/images-portfolio/building-company/preview-building-company.png" alt="">
                   <div class="work__content">
-                     <div class="work__cat">category: interaction</div>
+                     <div class="work__cat">category: landing</div>
                      <div class="work__title">
-                        Project title
+                        Project: build company
                         <time class="work__data" datetime="2020-11-01 19:00">2020</time>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="portfolio__col" data-cat="interaction">
-               <div class="work">
-                  <img class="work__image" src="https://placehold.it/370x250" alt="">
+            <div class="portfolio__col" data-cat="website">
+               <div class="work" data-modal="#project_5">
+                  <img class="work__image" src="assets/images/images-portfolio/flight-search/preview-flight-search.png" alt="">
                   <div class="work__content">
-                     <div class="work__cat">category: interaction</div>
+                     <div class="work__cat">category: website</div>
                      <div class="work__title">
-                        Project title
+                        Project: flight search
                         <time class="work__data" datetime="2020-11-01 19:00">2020</time>
                      </div>
                   </div>
@@ -138,24 +150,12 @@
             </div>
             <div class="portfolio__col" data-cat="website">
                <div class="work">
-                  <img class="work__image" src="https://placehold.it/370x250" alt="">
+                  <img class="work__image" src="assets/images/images-portfolio/in-working.png" alt="">
                   <div class="work__content">
-                     <div class="work__cat">category: website</div>
+                     <div class="work__cat">category:</div>
                      <div class="work__title">
-                        Project title
-                        <time class="work__data" datetime="2020-11-01 19:00">2020</time>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="portfolio__col" data-cat="website">
-               <div class="work">
-                  <img class="work__image" src="https://placehold.it/370x250" alt="">
-                  <div class="work__content">
-                     <div class="work__cat">category: website</div>
-                     <div class="work__title">
-                        Project title
-                        <time class="work__data" datetime="2020-11-01 19:00">2020</time>
+                        Project: in work 
+                        <time class="work__data" datetime="2020-11-01 19:00">2021</time>
                      </div>
                   </div>
                </div>
@@ -173,10 +173,10 @@
             <div class="footer__credits">
                <div class="footer__copyright">Social link</div>
                <div href="#" class="footer__social">
-                  <a href="#" target="_blank">
+                  <a href="social-link.html">
                      <img src="assets/images/social-icon/facebook-footer.svg" height="21px" alt="">
                   </a>
-                  <a href="#" target="_blank">
+                  <a href="social-link.html">
                      <img src="assets/images/social-icon/linkedin-footer.svg" width="21px" alt="">
                   </a>
                   <a href="https://twitter.com/bowelld" target="_blank">
@@ -185,8 +185,8 @@
                </div>
             </div><!-- /.footer__credits -->
             <nav class="footer__nav">
-               <a class="footer__nav-link" href="#">About me</a>
-               <a class="footer__nav-link" href="#">Works</a>
+               <a class="footer__nav-link" id="footerScrollAbout">About me</a>
+               <a class="footer__nav-link" id="footerScrollWorks">Works</a>
                <a class="footer__nav-link footer__nav-link--btn" href="mailto:bgmax022@gmail.com">hire me</a>
             </nav>
          </div><!-- /.footer__inner -->
@@ -204,27 +204,30 @@
             <div class="modal-work__preview">
                <div data-slider="slick">
                   <div>
-                     <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/active-box/activebox-portfolio-slide-1.jpg" alt="">
                   </div>
                   <div>
-                     <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/active-box/activebox-portfolio-slide-2.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/active-box/activebox-portfolio-slide-3.jpg" alt="">
                   </div>
                </div>
             </div>
             <div class="modal-work__description">
                <div class="modal-work__header">
-                  <h3 class="modal-work__title">Project title</h3>
+                  <h3 class="modal-work__title">ActiveBox</h3>
                   <div class="modal-work__info">
-                     category<span class="model-work__info-divider">|</span>2021
+                     category: landing<span class="model-work__info-divider">|</span>2020
                   </div>
                </div>
                <div class="modal-work__client">
                   <div class="modal-work__client-title">Client:</div>
-                  <div class="modal-work__client-company">Agency</div>
+                  <div class="modal-work__client-company">my Portfolio</div>
                </div>
                <div class="modal-work__text">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque nihil id repellat corrupti accusantium ad officiis consequuntur velit voluptatum voluptate fuga quod exercitationem, repellendus laboriosam vel eum totam deserunt.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque nihil id repellat corrupti accusantium ad officiis consequuntur velit voluptatum voluptate fuga quod exercitationem, repellendus laboriosam vel eum totam deserunt.</p> 
+                  <p>link to full image: <a href="assets/images/images-portfolio/active-box/activebox-portfolio.png" target="_blank">click me</a></p>
+                  <p>link to download repository ActiveBox: <a href="https://github.com/xamand/portfolio_active_box/archive/main.zip">click me</a></p>
                </div>
                <div class="modal-work__footer">
                   <button class="modal-work__btn slickPrev" type="button">
@@ -250,27 +253,187 @@
             <div class="modal-work__preview">
                <div data-slider="slick">
                   <div>
-                     <img class="modal-work__photo" src="https://placehold.it/790x780" alt="">
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/mogo/mogo-portfolio-slide-1.jpg" alt="">
                   </div>
                   <div>
-                     <img class="modal-work__photo" src="https://placehold.it/790x780/333" alt="">
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/mogo/mogo-portfolio-slide-2.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/mogo/mogo-portfolio-slide-3.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/mogo/mogo-portfolio-slide-4.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/mogo/mogo-portfolio-slide-5.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/mogo/mogo-portfolio-slide-6.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/mogo/mogo-portfolio-slide-7.jpg" alt="">
                   </div>
                </div>
             </div>
             <div class="modal-work__description">
                <div class="modal-work__header">
-                  <h3 class="modal-work__title">Project title</h3>
+                  <h3 class="modal-work__title">MoGo</h3>
                   <div class="modal-work__info">
                      category<span class="model-work__info-divider">|</span>2021
                   </div>
                </div>
                <div class="modal-work__client">
                   <div class="modal-work__client-title">Client:</div>
-                  <div class="modal-work__client-company">Agency</div>
+                  <div class="modal-work__client-company">my Portfolio</div>
                </div>
                <div class="modal-work__text">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque nihil id repellat corrupti accusantium ad officiis consequuntur velit voluptatum voluptate fuga quod exercitationem, repellendus laboriosam vel eum totam deserunt.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque nihil id repellat corrupti accusantium ad officiis consequuntur velit voluptatum voluptate fuga quod exercitationem, repellendus laboriosam vel eum totam deserunt.</p> 
+                  <p>link to full image: <a href="assets/images/images-portfolio/mogo/mogo-portfolio.png" target="_blank">click me</a></p>
+                  <p>link to download repository MoGo: <a href="https://github.com/xamand/mogo_portfolio/archive/master.zip">click me</a></p> 
+               </div>
+               <div class="modal-work__footer">
+                  <button class="modal-work__btn slickPrev" type="button">
+                     <img src="assets/images/left-arrow.svg" height="11" alt="">
+                     Previous
+                  </button>
+                  <button class="modal-work__btn slickNext" type="button">
+                     Next
+                     <img src="assets/images/rigth-arrow.svg" height="11" alt="">
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal -->
+
+   <div class="modal" id="project_3">
+      <div class="modal__dialog">
+         <button class="modal__close" type="button" data-close>
+            <img src="assets/images/close-button.svg" alt="">
+         </button>
+         <div class="modal-work">
+            <div class="modal-work__preview">
+               <div data-slider="slick">
+                  <div>
+                     <img class="modal-work__photo" src="/assets/images/images-portfolio/personal-blog/personal-blog-portfolio-slide1.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="/assets/images/images-portfolio/personal-blog/personal-blog-portfolio-slide2.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="modal-work__description">
+               <div class="modal-work__header">
+                  <h3 class="modal-work__title">Personal Blog</h3>
+                  <div class="modal-work__info">
+                     category<span class="model-work__info-divider">|</span>2021
+                  </div>
+               </div>
+               <div class="modal-work__client">
+                  <div class="modal-work__client-title">Client:</div>
+                  <div class="modal-work__client-company">my Portfolio</div>
+               </div>
+               <div class="modal-work__text">
+                  <p>link to full image: <a href="assets/images/images-portfolio/personal-blog/personal-blog-portfolio.jpg" target="_blank">click me</a></p>
+                  <p>link to download repository Personal Blog: <a href="https://github.com/xamand/blog_portfolio/archive/main.zip">click me</a></p>  
+               </div>
+               <div class="modal-work__footer">
+                  <button class="modal-work__btn slickPrev" type="button">
+                     <img src="assets/images/left-arrow.svg" height="11" alt="">
+                     Previous
+                  </button>
+                  <button class="modal-work__btn slickNext" type="button">
+                     Next
+                     <img src="assets/images/rigth-arrow.svg" height="11" alt="">
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal -->
+
+   <div class="modal" id="project_4">
+      <div class="modal__dialog">
+         <button class="modal__close" type="button" data-close>
+            <img src="assets/images/close-button.svg" alt="">
+         </button>
+         <div class="modal-work">
+            <div class="modal-work__preview">
+               <div data-slider="slick">
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/building-company/building-company-portfolio-slide1.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/building-company/building-company-portfolio-slide2.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="modal-work__description">
+               <div class="modal-work__header">
+                  <h3 class="modal-work__title">building company</h3>
+                  <div class="modal-work__info">
+                     category<span class="model-work__info-divider">|</span>2021
+                  </div>
+               </div>
+               <div class="modal-work__client">
+                  <div class="modal-work__client-title">Client:</div>
+                  <div class="modal-work__client-company">my Portfolio</div>
+               </div>
+               <div class="modal-work__text">
+                  <p>link to full image: <a href="assets/images/images-portfolio/building-company/building-company-portfolio.png" target="_blank">click me</a></p> 
+                  <p>link to download repository Building Company: <a href="https://github.com/xamand/tz_safe_builder_f_e/archive/master.zip">click me</a></p>
+               </div>
+               <div class="modal-work__footer">
+                  <button class="modal-work__btn slickPrev" type="button">
+                     <img src="assets/images/left-arrow.svg" height="11" alt="">
+                     Previous
+                  </button>
+                  <button class="modal-work__btn slickNext" type="button">
+                     Next
+                     <img src="assets/images/rigth-arrow.svg" height="11" alt="">
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div><!-- /.modal__dialog -->
+   </div><!-- /.modal -->
+
+   <div class="modal" id="project_5">
+      <div class="modal__dialog">
+         <button class="modal__close" type="button" data-close>
+            <img src="assets/images/close-button.svg" alt="">
+         </button>
+         <div class="modal-work">
+            <div class="modal-work__preview">
+               <div data-slider="slick">
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/flight-search/flight-search-portfolio-slide1.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/flight-search/flight-search-portfolio-slide2.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/flight-search/flight-search-portfolio-slide3.jpg" alt="">
+                  </div>
+                  <div>
+                     <img class="modal-work__photo" src="assets/images/images-portfolio/flight-search/flight-search-portfolio-slide4.jpg" alt="">
+                  </div>
+               </div>
+            </div>
+            <div class="modal-work__description">
+               <div class="modal-work__header">
+                  <h3 class="modal-work__title">flight search</h3>
+                  <div class="modal-work__info">
+                     category<span class="model-work__info-divider">|</span>2021
+                  </div>
+               </div>
+               <div class="modal-work__client">
+                  <div class="modal-work__client-title">Client:</div>
+                  <div class="modal-work__client-company">my Portfolio</div>
+               </div>
+               <div class="modal-work__text">
+                  <p>link to full image: <a href="assets/images/images-portfolio/flight-search/flight-search-portfolio.png" target="_blank">click me</a></p>
+                  <p>link to download repository Flight Search: <a href="https://github.com/xamand/wa_project/archive/master.zip ">click me</a></p>
+                  
                </div>
                <div class="modal-work__footer">
                   <button class="modal-work__btn slickPrev" type="button">
@@ -453,7 +616,7 @@
             </div><!-- /.timeline -->
             <div class="text-center">
                <a href="mailto:bgmax022@gmail.com" class="btn">hire me</a>
-               <a href="#" class="btn">download</a>
+               <a href="https://drive.google.com/uc?id=1L01lOn_u_98iRkjlcn9nKSR48BIrhDuR&export=download" class="btn">download</a>
             </div>
          </div><!-- /.modal__content -->
       </div><!-- /.modal__dialog -->
