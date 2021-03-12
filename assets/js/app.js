@@ -2,6 +2,27 @@
 
 $(function () {
 
+   $("#scrollAbout").click(function() {
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#aboutMe").offset().top
+      }, 2000);
+  });
+   $("#scrollWorks").click(function() {
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#works").offset().top
+      }, 2000);
+  });
+   $("#footerScrollAbout").click(function() {
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#aboutMe").offset().top
+      }, 2000);
+  });
+   $("#footerScrollWorks").click(function() {
+      $([document.documentElement, document.body]).animate({
+          scrollTop: $("#works").offset().top
+      }, 2000);
+  });
+
    const avatarMask = $('.avatar-mask');
    const introContent = $('.intro__content')
    introContent.on("mouseover", ()=> {
@@ -10,7 +31,6 @@ $(function () {
    introContent.on("mouseout", ()=> {
       avatarMask.css({"opacity": "0"})
    });
-
 
 
    const worksSlider =  $('[data-slider="slick"]');
@@ -49,15 +69,22 @@ $(function () {
       let $this = $(this);
       let modalId = $this.data('modal')
       
-      
-      setTimeout(function() {
-         $('body').addClass('no-scroll');
-      }, 100)
       $(modalId).addClass('show');
-      const widthShowModal = document.querySelector(".show");
-      const lockPaddingValue = widthShowModal.clientWidth - widthShowModal.offsetWidth + "px";
-      document.body.style.paddingRight = lockPaddingValue;
-      console.log(lockPaddingValue);
+      const ShowModal = document.querySelector(".show");
+      const ShowModal2 = document.querySelector("body");
+
+      let lockPaddingValue = ShowModal2.offsetWidth - ShowModal.clientWidth;
+      if(!lockPaddingValue) {
+         let widthShowModal = ShowModal.offsetWidth;
+         $('body').addClass('no-scroll');
+         let widthShowModal2 = ShowModal2.offsetWidth;
+         document.body.style.paddingRight = widthShowModal2 - widthShowModal + "px";
+      }else {
+         document.body.style.paddingRight = lockPaddingValue + "px";
+         $('body').addClass('no-scroll');
+      }
+      
+      
       
 
       setTimeout(function() {
@@ -82,7 +109,7 @@ $(function () {
       setTimeout(function() {
          modalParent.removeClass('show');
          $('body').removeClass('no-scroll');
-         document.body.style.paddingLeft = "0px"
+         document.body.style.paddingRight = "0px"
       }, 200);
    });
 
